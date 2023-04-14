@@ -24,3 +24,4 @@ This project is an analysis of this dataset.
  #### Iris data set resource: [iris.csv](https://archive.ics.uci.edu/ml/datasets/iris)
  #### Using pandas: [geekforgeeks.org](https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/)
  #### Code reference and to understand project: [angela1C github](https://github.com/angela1C/Programming-and-Scripting-Project-2019/blob/master/project_iris.py)
+#### python matplotlib histograms & pandas: [nbshare.io](https://www.nbshare.io/notebook/204214467/How-to-Plot-a-Histogram-in-Python/)

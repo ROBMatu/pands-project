@@ -21,5 +21,14 @@ print("Here is a statistical summary of the dataset")
 print(iris_read.describe())
 
 # histogram subplots of each of the iris attributes 
-iris_read.hist(alpha=0.8, bins=50, figsize=(12,8))
+#iris_read['Sepal length'].hist(alpha=0.8, bins=50, figsize=(12,8))
+#plt.hist(iris_read["Sepal length"],bins=50)
+sl_setosa= iris_read.iloc[:50,[1]]
+sl_versicolor= iris_read.iloc[51:101,[1]]
+sl_virginica= iris_read.iloc[101:151,[1]]
+
+plt.hist(sl_setosa, bins=30,label='setosa',color='violet')
+plt.hist(sl_versicolor, bins=30,label='versicolor',color='yellow')
+plt.hist(sl_virginica, bins=30,label='virginica',color='purple')
+plt.legend(loc='upper right')
 plt.show()
