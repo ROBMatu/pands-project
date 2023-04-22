@@ -21,6 +21,13 @@ print(iris_read.head())
 print("Here is a statistical summary of the dataset")
 print(iris_read.describe())
 
+#data summary to txt file
+sl = iris_read.iloc[:151,[0]]
+sw = iris_read.iloc[:151,[1]]
+pl = iris_read.iloc[:151,[2]]
+pw = iris_read.iloc[:151,[3]]
+
+
 # histogram subplots of each of the iris attributes 
 iris_read.hist(alpha=0.8, bins=50, figsize=(12,8))
 plt.show()
