@@ -17,20 +17,22 @@ iris_read = pandas.read_csv("iris.csv",names = iris_data_attributes)
 print("Here is an example of the dataset")
 print(iris_read.head())
 
-# describe() shows a statistical summary of the entire dataset
+# describe() showing a statistical summary of the entire dataset
 print("Here is a statistical summary of the dataset")
 print(iris_read.describe())
 
-#data summary to txt file
-sl = iris_read.iloc[:151,[0]]
-sw = iris_read.iloc[:151,[1]]
-pl = iris_read.iloc[:151,[2]]
-pw = iris_read.iloc[:151,[3]]
+# Data summary to txt file
+# the summary is converted to a string using to_string()
+# then its wriien to iris_data_summary.txt
+iris_summary = iris_read.describe()
+with open("iris_data_summary.txt","w")as f:
+    f.write("This is a summary of the Iris data set of each attribute: \n")
+    f.write(iris_summary.to_string(index='name'))
 
 
 # histogram subplots of each of the iris attributes 
 iris_read.hist(alpha=0.8, bins=50, figsize=(12,8))
-plt.show()
+#plt.show()
 #plt.savefig("iris_attributes.png")
 
 
@@ -52,7 +54,7 @@ plt.title("Sepal length distribution of Iris varieties", fontdict=font)
 plt.xlabel("cm", fontdict=subfont)
 plt.ylabel("Quantity", fontdict=subfont)
 plt.legend(loc='upper right')
-plt.show()
+#plt.show()
 #plt.savefig("sepal_length.png")
 
 
@@ -69,7 +71,7 @@ plt.title("Sepal width distribution of Iris varieties", fontdict=font)
 plt.xlabel("cm", fontdict=subfont)
 plt.ylabel("Quantity", fontdict=subfont)
 plt.legend(loc='upper right')
-plt.show()
+#plt.show()
 #plt.savefig("sepal_width.png")
 
 
@@ -86,7 +88,7 @@ plt.title("Petal length distribution of Iris varieties", fontdict=font)
 plt.xlabel("cm", fontdict=subfont)
 plt.ylabel("Quantity", fontdict=subfont)
 plt.legend(loc='upper right')
-plt.show()
+#plt.show()
 #plt.savefig("petal_length.png")
 
 
@@ -103,7 +105,7 @@ plt.title("Petal width distribution of Iris varieties", fontdict=font)
 plt.xlabel("cm", fontdict=subfont)
 plt.ylabel("Quantity", fontdict=subfont)
 plt.legend(loc='upper right')
-plt.show()
+#plt.show()
 #plt.savefig("petal_width.png")
 
 # Sepal length vs Sepal width scatter plot
@@ -114,7 +116,7 @@ plt.scatter(sl_virginica,sw_virginica,label='virginica', color='purple')
 plt.title("Sepal length vs Sepal width",fontdict=font)
 plt.xlabel("Sepal length cm",fontdict=subfont)
 plt.ylabel("Sepal width cm",fontdict=subfont)
-plt.show()
+#plt.show()
 #plt.savefig("sepal_length_vs_sepal_width.png")
 
 
@@ -125,5 +127,5 @@ plt.scatter(pl_virginica,pw_virginica,label='virginica', color='purple')
 plt.title("Petal length vs Petal width",fontdict=font)
 plt.xlabel("Petal length cm",fontdict=subfont)
 plt.ylabel("Petal width cm",fontdict=subfont)
-plt.show()
+#plt.show()
 #plt.savefig("petal_length_vs_petal_width.png")

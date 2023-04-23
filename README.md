@@ -50,6 +50,10 @@ I then created two scatter plots, one to compare the Sepal length against the se
  [iris.csv](https://archive.ics.uci.edu/ml/datasets/iris)
  #### Using pandas:
   [geekforgeeks.org](https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/)
+
+  [stackoverflow dataframe summary to .txt](https://stackoverflow.com/questions/75196592/how-to-append-the-dataframe-output-to-txt-file)
+
+  [stackoverflow dataframe summary to .txt , index='name'](https://stackoverflow.com/questions/32835498/pandas-python-describe-formatting-output)
  #### Code reference and to understand project: 
  [angela1C github](https://github.com/angela1C/Programming-and-Scripting-Project-2019/blob/master/project_iris.py)
 #### python matplotlib histograms & pandas: 
