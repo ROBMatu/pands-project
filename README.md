@@ -41,20 +41,42 @@ Using the pandas function describe() again, I ouputted a summary of the data set
 
 ### Histogram plots of attributes
 I wanted to compare each variety of Iris against each other under each of the attributes to see how they differed from eachother.
-So I created four histogram plots using matplotlib.pyplot as plt. and saved each as a .png file. It was useful to compare the varieties this way as I could see the range of values more clearly than in the csv file.
+So I created four histogram plots using matplotlib.pyplot as plt, and saved each as a .png file. It was useful to compare the varieties this way as I could see the range of values more clearly than in the csv file.
 
 ---
 
 ### Scatter plots of attributes
-I then created two scatter plots, one to compare the Sepal length against the sepal width, and the other to compare Petal length against Petal Width. And within those scatter plots to compare the different varieties. These were useful to see the comparisons of the overall main attributes of the dataset sepals and petals.
+I then created two scatter plots, one to compare the Sepal length against the Sepal width, and the other to compare Petal length against Petal Width. And within those scatter plots to compare the different varieties. These were useful to see the comparisons of the overall main attributes of the dataset, Sepals and Petals.
 
 ---
 
 ## Analysis of Iris dataset
-Iris Setosa had the shortest but widest sepals, and it had the smallest petals by far. Iris Versicolor has the smallest sepal width but is quite close to Iris Virginica, Versicolor is the middle of the range for petal length and width. Iris Virginica has the widest distribution of sepal lengths and is the longest overall, its middle range for sepal width and has the largest petals overall.
+I wanted to do my own analysis into the Iris data set to better understand the data. I decided to compare the different varieties against each other to observe any differences between them. These were my findings.
+
+### This is a summary of the Iris data set of each attribute: 
+
+| stats | Sepal length | Sepal width | Petal length | Petal width |
+| :-: | :-:| :-:| :-:| :-:|      
+| count |   150.000000 | 150.000000  |  150.000000  |  150.000000|
+| mean  |     5.843333 |   3.054000  |  3.758667    |  1.198667|
+| std   |     0.828066 |   0.433594  |   1.764420   |  0.763161|
+| min   |     4.300000 |   2.000000  |   1.000000   |  0.100000|
+| 25%   |     5.100000 |   2.800000  |   1.600000   |  0.300000|
+| 50%   |     5.800000 |   3.000000  |   4.350000   |  1.300000|
+| 75%   |     6.400000 |   3.300000  |   5.100000   |  1.800000|
+| max   |     7.900000 |   4.400000  |   6.900000   |  2.500000|
+
+### From analysing the histograms and scatterplots.
+Iris Setosa had the shortest but widest sepals, and it had the smallest petals by far. 
+
+Iris Versicolor has the smallest sepal width but is quite close to Iris Virginica, Versicolor is the middle of the range for petal length and width.
+
+ Iris Virginica has the widest distribution of sepal lengths and is the longest overall, its middle range for sepal width and has the largest petals overall.
+
 So Setosa has the smallest sepals and petals and Virginica is the largest overall and Versicolour trends quite closely with Virginica.
 
-I also found the python module's, matplotlib and pandas, very useful for making the data more understanable and aiding in analysis to show these comparisions between the Iris varieties.
+### My experience of using python for data analysis.
+I also found the python module's, matplotlib and pandas, very useful for making the data more understanable, and aiding in analysis to show these comparisions between the Iris varieties. They allowed me to make very useful plots and extracting the data easy to do. So I would recommend using python and its many modules for doing data analysis.
 
 
 ---
@@ -90,9 +112,11 @@ I also found the python module's, matplotlib and pandas, very useful for making 
 [stackoverflow plt.close()](https://stackoverflow.com/questions/61551562/how-to-avoid-2-plots-being-wrongly-mixed)
 
 #### Code reference and to understand project: 
- [angela1C github, expectations](https://github.com/angela1C/Programming-and-Scripting-Project-2019/blob/master/project_iris.py)
+ [angela1C github observation & expectations](https://github.com/angela1C/Programming-and-Scripting-Project-2019/blob/master/project_iris.py)
 
  [pydata.org, dataframe.hist()](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html)
 
  #### other sources
-[wikipedia general Iris data set info ](https://en.wikipedia.org/wiki/Iris_flower_data_set)
+[wikipedia general Iris data set info for synopsis](https://en.wikipedia.org/wiki/Iris_flower_data_set)
+
+[readme table formatting](https://www.pluralsight.com/guides/working-tables-github-markdown)

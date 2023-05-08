@@ -2,8 +2,8 @@
 # Author: Robert O'Brien-Monk
 # Outputs a summary of each variable to a single text file,
 # Saves a histogram of each variable to png files,
-# Outputs a scatter plot of each pair of variables.
-# 
+# Outputs a scatter plot of each pair of variables to png files
+
 
 import pandas
 import matplotlib.pyplot as plt
@@ -43,7 +43,7 @@ font = {'family':'Times','color':'purple', 'size':20}
 subfont = {'family':'Times','color':'green', 'size':15}
 
 # Sepal length histogram comparing varieties of Iris
-
+# extracting data for each iris variety using iloc
 sl_setosa = iris_read.iloc[:50,[0]]
 sl_versicolor = iris_read.iloc[51:101,[0]]
 sl_virginica = iris_read.iloc[101:151,[0]]
@@ -61,7 +61,7 @@ plt.savefig("sepal_length.png")
 plt.close()
 
 # Sepal Width histogram comparing varieties of Iris
-
+# extracting data for each iris variety using iloc
 sw_setosa = iris_read.iloc[:50,[1]]
 sw_versicolor = iris_read.iloc[51:101,[1]]
 sw_virginica = iris_read.iloc[101:151,[1]]
@@ -79,7 +79,7 @@ plt.savefig("sepal_width.png")
 plt.close()
 
 # Petal length histogram comparing varieties  of Iris
-
+# extracting data for each iris variety using iloc
 pl_setosa = iris_read.iloc[:50,[2]]
 pl_versicolor = iris_read.iloc[51:101,[2]]
 pl_virginica = iris_read.iloc[101:151,[2]]
@@ -97,7 +97,7 @@ plt.savefig("petal_length.png")
 plt.close()
 
 # petal Width histogram comparing varieties  of Iris
-
+# extracting data for each iris variety using iloc
 pw_setosa = iris_read.iloc[:50,[3]]
 pw_versicolor = iris_read.iloc[51:101,[3]]
 pw_virginica = iris_read.iloc[101:151,[3]]
@@ -115,7 +115,7 @@ plt.savefig("petal_width.png")
 plt.close()
 
 # Sepal length vs Sepal width scatter plot, comparing varieties  of Iris
-
+# using variables declared for the histograms
 plt.scatter(sl_setosa,sw_setosa,label='setosa', color='violet')
 plt.scatter(sl_versicolor,sw_versicolor,label='versicolor', color='yellow')
 plt.scatter(sl_virginica,sw_virginica,label='virginica', color='purple')
