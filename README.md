@@ -51,7 +51,7 @@ I then created two scatter plots, one to compare the Sepal length against the Se
 ---
 
 ## Analysis of Iris dataset
-I wanted to do my own analysis into the Iris data set to better understand the data. I decided to compare the different varieties against each other to observe any differences between them. These were my findings.
+I wanted to do my own analysis into the Iris data set to better understand the data. This data set has been useful, as a simple introduction into studying a data set using python. I decided to compare the different varieties against each other to observe any differences between them. These were my findings.
 
 ### This is a summary of the Iris data set of each attribute: 
 
@@ -65,6 +65,8 @@ I wanted to do my own analysis into the Iris data set to better understand the d
 | 50%   |     5.800000 |   3.000000  |   4.350000   |  1.300000|
 | 75%   |     6.400000 |   3.300000  |   5.100000   |  1.800000|
 | max   |     7.900000 |   4.400000  |   6.900000   |  2.500000|
+
+Sepal width is close to a low standard deviation and Sepel length has a high standard deviation, and the petal attributes have a high standard deviation according to the mean and standard deviation results and iris_attributes.png.
 
 ### From analysing the histograms and scatterplots.
 Iris Setosa had the shortest but widest sepals, and it had the smallest petals by far. 
